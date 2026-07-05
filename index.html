@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4 Competition | The Uncompromising M</title>
+    <meta name="description"
+        content="Experience the raw power of the BMW M4 Competition. Explore high-performance engineering, twin-turbo inline-6 dynamics, and an interactive scroll journey.">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Technical Preloader Overlay -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-logo">APEX<span>PERFORMANCE</span></div>
+            <div class="loader-circle-wrapper">
+                <div class="loader-circle-bg"></div>
+                <div class="loader-circle-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+            <div class="loader-text">Initializing high-performance dynamics...</div>
+        </div>
+    </div>
+
+    <!-- Modern Glassmorphism Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo" id="logo">APEX<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#hero" id="nav-home">Overview</a></li>
+            <li><a href="#scroll-section" id="nav-reveal">Dynamics</a></li>
+            <li><a href="#details-section" id="nav-notes">Specifications</a></li>
+            <li><a href="#collection" id="nav-collection">M Lineup</a></li>
+        </ul>
+        <div class="nav-right-group">
+            <button class="nav-cta" id="cta-button" onclick="window.location.href='#cta-section'">Build Yours</button>
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">M PERFORMANCE DYNAMICS</span>
+            <h1 class="hero-title">THE UNCOMPROMISING M</h1>
+            <p class="hero-desc">Experience Raw Power. Born on the track, engineered for the street. A precise
+                orchestration of high-performance physics.</p>
+            <button class="hero-btn"
+                onclick="document.getElementById('scroll-section').scrollIntoView({ behavior: 'smooth' })">Explore
+                Mechanics</button>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-indicator-text">Scroll to accelerate</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </header>
+
+    <!-- Scroll-Driven Video Canvas Section -->
+    <section class="scroll-track" id="scroll-section">
+        <div class="sticky-container" id="sticky-container">
+            <!-- Vignette depth overlay -->
+            <div class="canvas-vignette"></div>
+
+            <!-- Sequence canvas -->
+            <canvas id="frame-canvas"></canvas>
+
+            <!-- Technical Spec Overlays Synced to Canvas Frames -->
+            <div class="scroll-caption-container">
+                <div class="scroll-caption pos-left" id="caption-1">
+                    <span class="caption-label">01 / PROPULSION SYSTEM</span>
+                    <h2 class="caption-title">Twin-Turbo Inline-6</h2>
+                    <p class="caption-desc">Featuring high-precision injection and M TwinPower Turbo technology,
+                        unleashing raw torque and instant throttle response across the powerband.</p>
+                </div>
+
+                <div class="scroll-caption pos-right" id="caption-2">
+                    <span class="caption-label">02 / KINETIC CONTROL</span>
+                    <h2 class="caption-title">7-Speed Dual Clutch</h2>
+                    <p class="caption-desc">Lightning-fast gear alterations with zero interruption in power delivery.
+                        Calibrated perfectly to manage aggressive lateral track dynamics.</p>
+                </div>
+
+                <div class="scroll-caption" id="caption-3">
+                    <span class="caption-label">03 / AERODYNAMICS</span>
+                    <h2 class="caption-title">Sculpted For Velocity</h2>
+                    <p class="caption-desc">Aggressive front air dams, iconic massive kidney grilles, and an integrated
+                        rear diffuser optimize computational fluid dynamics for ultimate downforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs & Details Section -->
+    <section class="details-section" id="details-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-subtitle">MECHANICAL BLUEPRINT</span>
+                <h2 class="section-title">Core Performance Architecture</h2>
+            </div>
+
+            <!-- Automotive Spec Grid Matrix -->
+            <div class="notes-grid">
+                <div class="note-card" id="note-top">
+                    <span class="note-tag">POWERTRAIN</span>
+                    <h3 class="note-title">TwinPower Turbo</h3>
+                    <p class="note-ingredients">3.0L Inline 6-Cylinder</p>
+                    <p class="note-desc">Engineered with a forged crankshaft, lightweight pistons, and track-ready oil
+                        management systems to withstand constant high-G cornering loops.</p>
+                </div>
+
+                <div class="note-card" id="note-heart">
+                    <span class="note-tag">TRANSMISSION</span>
+                    <h3 class="note-title">7-Speed DCT</h3>
+                    <p class="note-ingredients">Drivelogic Shift Matrix</p>
+                    <p class="note-desc">Instantaneous gear changes featuring variable launch control settings and
+                        custom programmable paddle response shift profiles.</p>
+                </div>
+
+                <div class="note-card" id="note-base">
+                    <span class="note-tag">SUSPENSION</span>
+                    <h3 class="note-title">Adaptive M Chassis</h3>
+                    <p class="note-ingredients">Electromagnetically Controlled Dampers</p>
+                    <p class="note-desc">Monitors body movements continuously per millisecond, dynamically configuring
+                        chassis rigidity to eliminate body roll instantly.</p>
+                </div>
+            </div>
+
+            <!-- Heritage Split Screen Showcase -->
+            <div class="showcase-split" id="heritage-story">
+                <div class="showcase-text-content">
+                    <span class="showcase-eyebrow">RACING METRICS</span>
+                    <h2 class="showcase-heading">Designed For Absolute Domination</h2>
+                    <p class="showcase-desc">The M4 Competition layout translates digital simulation directly into
+                        asphalt tearing reality.</p>
+                    <p class="showcase-subdesc">Every variant undergoes hundreds of rigorous validation laps around the
+                        Nürburgring Nordschleife. The carbon fiber reinforced plastic (CFRP) roof lowers the vehicle's
+                        center of gravity, significantly boosting handling precision through tight apex chicanes.</p>
+                    <a href="#cta-section" class="showcase-link">Explore Customization Options <span>&rarr;</span></a>
+                </div>
+                <div class="showcase-media" id="story-media">
+                    <div class="showcase-image-wrapper">
+                        <!-- Keep path structure clean -->
+                        <img src="./assets/media/video frames/ezgif-frame-200.jpg" alt="BMW M4 Chassis Engineering" class="showcase-image"
+                            id="story-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lineup Showcase Header -->
+            <div class="section-header" id="collection">
+                <span class="section-subtitle">THE LINEUP</span>
+                <h2 class="section-title">M Power Class Variants</h2>
+            </div>
+
+            <!-- Product/Vehicle Pricing Cards Grid -->
+            <div class="product-grid">
+                <div class="product-card" id="prod-gold">
+                    <div class="product-image-container">
+                        <img src="./assets/media/video frames/ezgif-frame-100.jpg" alt="BMW M4 Coupe" class="product-image">
+                    </div>
+                    <span class="product-category">High Performance Coupe</span>
+                    <h3 class="product-title">M4 Coupe</h3>
+                    <p class="product-price">$79,100</p>
+                    <button class="product-btn" onclick="window.location.href='#cta-section'">Configure Spec</button>
+                </div>
+
+                <div class="product-card" id="prod-platinum">
+                    <div class="product-image-container">
+                        <img src="./assets/media/video frames/ezgif-frame-002.jpg" alt="BMW M4 Competition" class="product-image">
+                    </div>
+                    <span class="product-category">Competition Edition</span>
+                    <h3 class="product-title">M4 Competition</h3>
+                    <p class="product-price">$83,200</p>
+                    <button class="product-btn" onclick="window.location.href='#cta-section'">Configure Spec</button>
+                </div>
+
+                <div class="product-card" id="prod-oud">
+                    <div class="product-image-container">
+                        <img src="./assets/media/video frames/ezgif-frame-040.jpg" alt="BMW M4 CS" class="product-image"
+                            style="filter: brightness(0.85) contrast(1.1);">
+                    </div>
+                    <span class="product-category">Track Limited Edition</span>
+                    <h3 class="product-title">M4 CS</h3>
+                    <p class="product-price">$123,500</p>
+                    <button class="product-btn" onclick="window.location.href='#cta-section'">Join Waitlist</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tech Interactive Call To Action -->
+    <section class="cta-section" id="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">BUILD YOUR SPEC</h2>
+            <p class="cta-desc">Configure your bespoke package down to the individual thread matrix. Select exterior
+                frozen metallic finishes, carbon ceramic brake calipers, and custom bucket seats.</p>
+            <button class="hero-btn" style="opacity:1; transform:none;"
+                onclick="alert('Your performance vehicle configurations have been compiled. Connecting you with an M Studio Consultant.')">Enter
+                Configurator</button>
+        </div>
+    </section>
+
+    <!-- Industrial Modern Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">APEX<span>PERFORMANCE</span></div>
+                    <p>Bespoke automotive UI development, bridging precision engineering principles with cutting edge
+                        performance architecture.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-nav-title">Vehicles</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Overview</a></li>
+                        <li><a href="#heritage-story">Engineering</a></li>
+                        <li><a href="#collection">M Lineup</a></li>
+                        <li><a href="#details-section">Blueprints</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-nav-title">M Studios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Munich</a></li>
+                        <li><a href="#">Nürburg</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-nav-title">Telemetry Updates</h4>
+                    <p>Subscribe to private allocation notices, track day invitations, and technical aerodynamic
+                        releases.</p>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Telemetry tracking enabled.');">
+                        <input type="email" class="newsletter-input" placeholder="Enter secure email address" required
+                            aria-label="Email address">
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">&copy; 2026 APEX Performance Inc. Architectural Layout Inspired by M Dynamics.
+                    All Rights Reserved.</div>
+                <div class="footer-socials">
+                    <a href="#">Instagram</a>
+                    <a href="#">Telemetry Log</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
